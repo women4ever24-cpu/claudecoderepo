@@ -166,6 +166,19 @@ img {
   max-width: 720px;
 }
 
+.hero-cat {
+  width: 220px;
+  height: auto;
+  margin: 0 auto 28px;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.35));
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
 .hero-content h1 {
   font-family: var(--font-heading);
   font-size: clamp(2.4rem, 7vw, 5rem);
